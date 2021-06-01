@@ -47,7 +47,8 @@ li{
   flex-basis: 300px;
   text-align: center;
   padding: 30px;
-  border: 1px solid #222;
+  box-shadow: 2px 2px 5px grey;
+  /* border: 1px solid #222; */
   margin: 10px;
 }
 </style>

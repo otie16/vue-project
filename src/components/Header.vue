@@ -6,6 +6,11 @@
 
 <script>
 export default {
+  props: {
+    title: {
+      type: String,
+    },
+  },
   data() {
     return {
       title: "Vue Heroes",
@@ -21,7 +26,7 @@ header {
 }
 
 h1 {
-  color:#222;
+  color: #222;
   text-align: center;
 }
 </style>

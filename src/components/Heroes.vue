@@ -26,7 +26,30 @@ export default {
 deleteHero () {
   this.heroes.pop()
 }
-  }
+  },
+  //lifecycle hooks
+  beforeCreate() {
+    alert('beforeCreate');
+  },
+//can be used to fetch data from the db
+  created(){
+    alert('created');
+  },
+
+  beforeMount(){
+    alert('beforeMount');
+  },
+
+  mounted() {
+    alert('mounted');
+  },
+beforeUpdate() {
+  alert('beforeUpdate');
+},
+updated(){
+  alert('updated');
+}
+
 };
 </script>
 
@@ -56,3 +79,4 @@ li {
   margin: 10px;
 }
 </style>
+ 

@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>{{ title }}</h1>
+    <h1 @click="changeTitle">{{ title }}</h1>
   </header>
 </template>
 
@@ -15,6 +15,12 @@ export default {
     return {
       title: "Vue Heroes",
     };
+  },
+  methods: {
+    changeTitle() {
+      //emittin an event
+      this.$emit("changeTitle", "Vue Wizards");
+    },
   },
 };
 </script>
